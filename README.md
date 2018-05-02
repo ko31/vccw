@@ -1,4 +1,4 @@
-# VCCW
+# VCCW + Adminer
 
 [![Build Status](https://travis-ci.org/vccw-team/vccw.svg?branch=master)](https://travis-ci.org/vccw-team/vccw)
 
@@ -16,3 +16,7 @@ To get started, check out <http://vccw.cc/>
 
 * The `site.yml` has to be in the same directory with Vagrantfile.
 * You can put difference to the `site.yml`.
+
+## Adminer
+
+Visit http://vccw.test:8000/ or http://192.168.33.10:8000/
