@@ -168,3 +168,4 @@ php_ini:
 
 synced_folder: wordpress
 document_root: /var/www/html
+document_root_adminer: /var/www/html_adminer

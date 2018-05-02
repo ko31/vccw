@@ -1,0 +1,20 @@
+---
+- hosts: all
+  vars:
+    user: "{{ ansible_env.USER | default( 'ubuntu' ) }}"
+
+  tasks:
+
+    - name: Create Adminer dir
+      become: yes
+      file:
+        path: "{{ vccw.document_root_adminer }}"
+        state: directory
+        owner: "{{ user }}"
+        group: "{{ user }}"
+
+    - name: Download Adminer
+      become: no
+      get_url:
+        url: https://github.com/vrana/adminer/releases/download/v4.6.2/adminer-4.6.2.php
+        dest: "{{ vccw.document_root_adminer }}/adminer.php"
